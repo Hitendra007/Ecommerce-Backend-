@@ -29,7 +29,7 @@ const productSchema = new mongoose.Schema({
     deliveryAmount: {
         type: Number,
         default: 0,
-        set: v => parseFloat(v.toFixed(2))
+        set: v => Number(parseFloat(v).toFixed(2)) // Ensure Number type with 2 decimal places
     },
     images: [{
         type: String,
@@ -38,12 +38,12 @@ const productSchema = new mongoose.Schema({
     oldPrice: {
         type: Number,
         required: true,
-        set: v => parseFloat(v.toFixed(2))
+        set: v => Number(parseFloat(v).toFixed(2)) // Ensure Number type with 2 decimal places
     },
     newPrice: {
         type: Number,
         required: true,
-        set: v => parseFloat(v.toFixed(2))
+        set: v => Number(parseFloat(v).toFixed(2)) // Ensure Number type with 2 decimal places
     },
     vendorId: {
         type: mongoose.Schema.Types.ObjectId,
@@ -79,4 +79,4 @@ productSchema.virtual('discountAmount').get(function () {
 });
 
 const Product = mongoose.model('Product', productSchema);
-export {Product};
+export { Product };

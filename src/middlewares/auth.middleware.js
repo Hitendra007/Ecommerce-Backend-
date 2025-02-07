@@ -12,13 +12,13 @@ const verifyJwt = asyncHandler(async(req,_,next)=>{
     if(!user){
         throw new apiError(401,"Invalid User")
     }
-    req.body.user = user;
+    req.user = user;
 
     next();
 })
 
 const isAdmin = asyncHandler(async(req,res,next)=>{
-      const role = req.body?.user?.role;
+      const role = req?.user?.role;
       if(!role){
         throw new apiError(500,'not Authorized!!')
       }
@@ -28,5 +28,6 @@ const isAdmin = asyncHandler(async(req,res,next)=>{
       }
       next()
 })
+
 
 export {verifyJwt,isAdmin}
