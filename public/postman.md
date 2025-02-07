@@ -141,7 +141,6 @@ Successful responses follow this format:
 
 ### **Postman Collection JSON**
 
-Here’s the **Postman Collection JSON** file based on your routes and controllers:
 
 ```json
 {
@@ -368,27 +367,6 @@ Here’s the **Postman Collection JSON** file based on your routes and controlle
       ]
     }
   ],
-  "variable": [
-    {
-      "key": "base_url",
-      "value": "http://localhost:8000/api/v1"
-    },
-    {
-      "key": "admin_token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-    },
-    {
-      "key": "staff_token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-    },
-    {
-      "key": "vendor_token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-    },
-    {
-      "key": "buyer_token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-    }
   ]
 }
 ```
