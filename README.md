@@ -87,11 +87,3 @@ This is a Node.js-based e-commerce API with role-based access control (admin, st
 - `GET /api/user/getProfile` - Get user profile
 - `GET /api/user/getAllProducts` - Browse all products (paginated)
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeatureName`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeatureName`).
-5. Open a pull request.
-
